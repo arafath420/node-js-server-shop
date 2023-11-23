@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-6 m-auto">
+      <a href="/" class="btn btn-primary my-2">Back</a>
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <form
+            action="/product/update/<%= singleProduct.id %>"
+            enctype="multipart/form-data"
+            method="POST"
+          >
+            <label for="">Name</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              name="name"
+              placeholder="name"
+              value="<%= singleProduct.name %>"
+            />
+            <label for="">Regular price</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              name="regularPrice"
+              placeholder="regularPrice"
+              value="<%= singleProduct.regularPrice %>"
+            />
+            <label for="">Sale Price</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              name="salePrice"
+              placeholder="salePrice"
+              value="<%= singleProduct.salePrice %>"
+            />
+            <label for="">Stock</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              name="stock"
+              placeholder="stock"
+              value="<%= singleProduct.stock %>"
+            />
+
+            <input class="form-control my-3" type="file" name="productPhoto" />
+
+            <button class="btn btn-primary mb-4" type="submit">Submit</button>
+          </form>
+          <img
+            style="width: 300px; height: 300px"
+            class=""
+            src="/product/<%= singleProduct.photo %>"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

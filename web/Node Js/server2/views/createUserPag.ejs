@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-6 m-auto">
+      <a href="/" class="btn btn-primary my-2">Back</a>
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <form action="/user" enctype="multipart/form-data" method="POST">
+            <input
+              class="form-control my-3"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
+            <input
+              class="form-control my-3"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+
+            <input
+              class="form-control my-3"
+              type="number"
+              name="phon"
+              placeholder="Phon Number"
+              required
+            />
+
+            <input
+              class="form-control my-3"
+              type="password"
+              name="pass"
+              placeholder="Your Password"
+              required
+            />
+
+            <button class="btn btn-primary mb-4" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

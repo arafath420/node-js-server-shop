@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-6 m-auto">
+      <a href="/" class="btn btn-primary my-2">Back</a>
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <div
+            style="align-items: center"
+            class="d-flex justify-content-between"
+          >
+            <div>
+              <img
+                style="width: 300px; height: 300px"
+                class=""
+                src="/product/<%= singleProduct.photo %>"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <h2>Name: <%= singleProduct.name %></h2>
+              <h2>Regular Price: <%= singleProduct.regularPrice %></h2>
+              <h2>Sale Price: <%= singleProduct.salePrice %></h2>
+              <h2>Stock: <%= singleProduct.stock %></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
